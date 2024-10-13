@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header & Navigation Bar -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+            <!-- Logo on the Left -->
+            <a class="navbar-brand" href="#">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png"
+                    alt="Innomatics Logo" height="40">
+            </a>
+
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3"><a class="nav-link" href="#">Home</a></li>
+                    
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Courses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <a class="dropdown-item" href="#">Data Science</a>
+                            <a class="dropdown-item" href="#">Full Stack Development</a>
+                            <a class="dropdown-item" href="#">Digital Marketing</a>
+                            <a class="dropdown-item" href="#">Amazon Web Services (AWS)</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Placements</a>
+                            <a class="dropdown-item" href="#">Partner With Us</a>
+                            <a class="dropdown-item" href="#">Contact Us</a>
+                            <a class="dropdown-item" href="#">Blog</a>
+                            <a class="dropdown-item" href="#">Gallery</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center">
+                <form class="form-inline d-flex align-items-center">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                        style="border-radius: 20px;">
+                    <button class="btn btn-outline-success ml-2" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <img src="https://eduport.webestica.com/assets/images/avatar/01.jpg" alt="User Avatar"
+                    class="rounded-circle ml-3" height="40">
+            </div>
+        </nav>
+    </header>
+
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/12/mb-banner.jpg" class="d-block w-100"
+                    alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/AWARD-PAGE.jpg" class="d-block w-100"
+                    alt="Banner 2">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right">
+                    <h1 class="tagline">We just don’t train, <br> We transform the careers</h1>
+                    <div class="d-flex align-items-center mt-3">
+                        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                        <!-- Google Ratings with Star Icons -->
+                        <div class="ml-3 ratings">
+                            <span class="rating">5.0</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side Image of Student -->
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="https://eduport.webestica.com/assets/images/element/07.png" class="img-fluid hero-img"
+                        alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="container-fluid py-5">
+        <div class="row text-center mb-4">
+            <h2 class="col-12">Our Courses</h2>
+            <p class="col-12">Explore our range of courses to kickstart your career transformation.</p>
+        </div>
+        <div class="row">
+            <!-- Card 1: Data Science -->
+            <div class="col-lg-4 col-md-6 mb-4 px-2">
+                <div class="card">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/No-1-best-data-science-course-training-institute-in-hyderabad.jpg"
+                        class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science</h5>
+                        <p class="card-text">This is a great choice for tech geeks, students, working professionals and
+                            aspiring data scientists who want to upskill and build a better foundation is the stream of
+                            Data Science.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Full Stack Web Development -->
+            <div class="col-lg-4 col-md-6 mb-4 px-2">
+                <div class="card">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Full-Stack-Web-Development-training-program-Innomatics-research-labs-india.png"
+                        class="card-img-top" alt="Full Stack Web Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack Web Development</h5>
+                        <p class="card-text">Learn the right skills to break into a development career & advance
+                            yourself as a full-stack Developer. It includes Frontend, Backend, databases, debugging &
+                            testing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Digital Marketing -->
+            <div class="col-lg-4 col-md-6 mb-4 px-2">
+                <div class="card">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/digital-marketing-course-training-hyderabad.jpg"
+                        class="card-img-top" alt="Digital Marketing">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing</h5>
+                        <p class="card-text">Digital Marketing Course at Innomatics is perfect for Entrepreneurs,
+                            Freelancers, Job seekers, Wanna be Entrepreneurs, working professionals who want to enhance
+                            their skill.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Big Data Analytics -->
+            <div class="col-lg-4 col-md-6 mb-4 px-2">
+                <div class="card">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/big-data-analytics-with-hadoop-training-in-hyderabad-india.jpg"
+                        class="card-img-top" alt="Big Data Analytics">
+                    <div class="card-body">
+                        <h5 class="card-title">Big Data Analytics</h5>
+                        <p class="card-text">Predictive Analytics Modeler is to gain knowledge in analytics models to
+                            collect, data mining, data collection, data visualization, and integration, nodes, and
+                            statistical analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: AWS Training -->
+            <div class="col-lg-4 col-md-6 mb-4 px-2">
+                <div class="card">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/AWS-training-institute-Innomatics-research-labs-Kukatpallihyderabad.jpg"
+                        class="card-img-top" alt="AWS Training">
+                    <div class="card-body">
+                        <h5 class="card-title">AWS Training</h5>
+                        <p class="card-text">Right from the jobseeker or existing professional who wants to accelerate
+                            their career with advanced concepts of cloud computing, AWS and core services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: DevOps -->
+            <div class="col-lg-4 col-md-6 mb-4 px-2">
+                <div class="card">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Devops-institute-Innomatics-research-labs-KukatpallyHyderabad.jpg"
+                        class="card-img-top" alt="DevOps">
+                    <div class="card-body">
+                        <h5 class="card-title">DevOps</h5>
+                        <p class="card-text">This is a must-learn course for the individuals who started her journey in
+                            the DevOps and cloud world and is ideally suited to developers, Cloud Admin, Solutions
+                            Architects and managers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classroom-video" class="container-fluid py-5">
+        <div class="row text-center mb-4">
+            <h2 class="col-12">Classroom Experience & Video Showcase</h2>
+            <p class="col-12">Get a glimpse of our interactive classrooms and inspiring sessions.</p>
+        </div>
+        <div class="row justify-content-center align-items-start">
+
+
+            <!-- Classroom Images -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5452-scaled/2408469614.jpg"
+                    class="img-fluid rounded classroom-img" alt="Classroom Image 1">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5414-scaled/2727721008.jpg"
+                    class="img-fluid rounded classroom-img" alt="Classroom Image 2">
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5450-scaled/2374760138.jpg"
+                    class="img-fluid rounded classroom-img" alt="Classroom Image 3">
+            </div>
+            
+            <!-- Video Section -->
+            <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/OKUFrW40xyI?si=Lz2Nph655RhlpO0Z"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="text-center mt-4"> 
+                    <a href="https://www.youtube.com/c/InnomaticsResearchLabs" class="btn btn-primary btn-lg"> More Videos</a> 
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container text-center text-md-left"> 
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://www.innomatics.in/wp-content/uploads/2023/01/innomatics-footer-logo.png" alt="Innomatics Logo" class="footer-logo">
+                    <p class="footer-description">
+                        A leading training institute, Innomatics Research Labs offers courses in areas such as NASSCOM Futureskills Prime Certified Data Science, Python, AI, Data Analytics, Full Stack Development, and Digital Marketing. Our practical training is designed meticulously to meet industry needs and provide valuable certification upon completion, empowering individuals to excel in their careers.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 quick-links"> 
+                    <h5 class="font-weight-bold">Quick Links</h5> 
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Internship</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 contact-us text-md-left"> 
+                    <h5 class="font-weight-bold">Contact Us</h5> 
+                    <p><i class="fas fa-map-marker-alt"></i> Kukatpally — Hyderabad</p>
+                    <p>#205, 2nd Floor, Fortune Signature, Near JNTU Metro Station, Kukatpally, Hyderabad, Telangana 500085</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Gachibowli — Hyderabad</p>
+                    <p>2nd Floor, Leeway, BP Raju Marg, Opp. Sarath City Capital Mall, Beside Subbayagari Hotel, Laxmi Cyber City, Whitefields, Kondapur, Telangana 500081</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pune</p>
+                    <p>2nd Floor, Sai Sayaji Apartment, 201,(P, Paud Rd, beside VANAZ Metro, above Bata showrrom, Ramkrishna Paramhans Nagar, Kothrud, Pune, Maharashtra 411038</p>
+                    
+                    <p><i class="fas fa-envelope"></i> For Course: info@innomatics.in</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 Made by Vinay Naik. All Rights Reserved.</p> 
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
